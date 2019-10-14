@@ -81,9 +81,5 @@ func main() {
 	if err := report.Execute(os.Stdout, result); err != nil {
 		log.Fatal(err)
 	}
-	//for _, item := range result.Items {
-	//	fmt.Printf("#%-5d %9.9s %.55s\n",
-	//		item.Number, item.User.Login, item.Title)
-	//}
 
 }
