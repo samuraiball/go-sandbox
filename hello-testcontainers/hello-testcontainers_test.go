@@ -19,6 +19,7 @@ func TestHelloTestContainerWithCompose(t *testing.T) {
 	execErr := compose.Invoke()
 	checkErr(t, execErr.Error)
 }
+
 func TestHelloTestContainer(t *testing.T) {
 	cxt := context.Background()
 
