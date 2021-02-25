@@ -22,10 +22,6 @@ func TestName(t *testing.T) {
 		MatchHeader("x-api-version", "1.[0-9]+").
 		Reply(200).
 		JSON(map[string]string{"foo": "bar"})
-	gock.New(MOCK_URL).
-		Get("/aaaa").
-		Reply(200).
-		JSON(map[string]string{"foo": "bar"})
 	//res, err := http.Get("http://" + MOCK_URL + PING_PATH)
 	//handleError(err)
 	req, err := http.NewRequest(http.MethodGet, "http://"+MOCK_URL+PING_PATH, nil)
